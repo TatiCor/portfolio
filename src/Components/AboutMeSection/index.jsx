@@ -1,17 +1,19 @@
 const AboutMeSection = () => {
     return (
-        <section id="aboutMe" className="flex flex-col h-[600px] items-center">
-            <span className=" flex flex-col justify-center items-center p-16 m-6 text-start">
-                <h1 className="font-semibold text-4xl mt-6">Hello, my name is Tatiana Cordecci</h1>
-                <p className="text-xl my-2 text-gray-100">Frontend Developer</p>
-            </span>
-            <span className="flex justify-center items-center text-lg px-16 mx-10 text-center ">
-                <p>I'm a frontend developer and I love programming and never stop learning. Also, I have a degree in law, which allows me to acquire great skills like ---- 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta aspernatur architecto, quas cumque rem, laborum nemo dolores libero aliquid in id voluptatem doloremque consequatur molestiae omnis veniam velit qui sint?
+        <section id="aboutMe" className="flex flex-col justify-center items-center py-10 h-[600px] lg:w-[600px] mx-auto">
+            <div className="p-16 m-6 text-center">
+                <h1 className="font-bold text-5xl mt-6">Hello👋 I'm Tatiana Cordecci </h1>
+                <h2 className="text-xl my-4 text-gray-100">Frontend Developer</h2>
+
+                <p className="text-2xl whitespace-wrap w-[900px] h-auto font-light py-5  text-gray-500 leading-relaxed">
+                    Hey there! I'm a passionate front-end developer from Argentina, driven by the fusion of design and functionality. My specialty lies in crafting unique solutions using HTML, CSS, JavaScript, and React.
+                    Firmly believing in the mantra of 'Never stop learning💜' , I immerse myself in the latest web technologies. My focus is on creating immersive user experiences while staying ahead in an ever-evolving tech landscape.
+                    Let's connect and explore how I can bring a fresh perspective and ongoing innovation to your projects! ✨
                 </p>
-            </span>
+            </div>
         </section>
     );
 }
 
 export { AboutMeSection };
+
