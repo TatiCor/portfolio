@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdOutlineMail } from "react-icons/md";
 import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
@@ -9,8 +10,11 @@ const ContactForm = () => {
     }
 
     return (
-        <section className='flex  flex-col  h-[600px] justify-center items-center  w-full shadow shadow-white/5 mt-8 '>
-            <h2 className='text-4xl font-bold mb-8'>Contact Me!</h2>
+        <section id='contact' className='flex  flex-col  h-[600px] justify-center items-center  w-full my-8 mb-12 '>
+            <span className='flex justify-center items-center py-2 mb-2'>
+                <MdOutlineMail className='flex justify-center mt-2 mx-2 size-8 '/>
+                <h2 className='flex justify-center items-center text-4xl font-bold '>Contact Me!</h2>
+            </span>
             <form onSubmit={handleSubmit} className=' w-1/4 mx-auto '>
                 <div className="flex flex-col m-4">
                     <div className="relative z-0 mb-5 group">

@@ -2,13 +2,14 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import HTML5Logo from '../../assets/html5.svg';
-import CSS3Logo from '../../assets/css.svg';
-import TailwindCSSLogo from '../../assets/tailwindcss.svg';
-import JavaScriptLogo from '../../assets/javascript.svg';
-import ReactLogo from  '../../assets/react.svg';
+import HTML5Logo from '../../assets/tech/html5.svg';
+import CSS3Logo from '../../assets/tech/css.svg';
+import TailwindCSSLogo from '../../assets/tech/tailwindcss.svg';
+import JavaScriptLogo from '../../assets/tech/javascript.svg';
+import ReactLogo from  '../../assets/tech/react.svg';
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
+import { HiOutlineComputerDesktop } from "react-icons/hi2";
 
 
 const CustomNextArrow = ({ onClick }) => (
@@ -66,10 +67,13 @@ const TechnologiesSection = () => {
     };
 
     return (
-        <section id='technologies' className='flex flex-col justify-center h-[600px] text-2xl m-4'>
-            <h2 className='text-center text-4xl font-bold'>Technologies</h2>
+        <section  id='technologies' className='flex flex-col justify-center py-10 h-[600px] pb-8 text-2xl m-4 mb-32'>
+            <span className='flex justify-center items-center p-2 h-full rounded-full'>
+                <HiOutlineComputerDesktop className='mx-2 size-7 opacity-90 mt-2 ' />
+                <h2 className='text-center text-4xl font-bold'>Technologies</h2>
+            </span>
 
-            <Slider {...settings} ref={sliderRef} className='flex text-white justify-center items-center h-[650px]' 
+            <Slider {...settings} ref={sliderRef} className='flex text-white justify-center items-center' 
                 nextArrow={<CustomNextArrow onClick={goToNextSlide} />} 
                 prevArrow={<CustomPrevArrow onClick={goToPrevSlide} />}
             >
