@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
 import { NavBar } from './Components/NavBar';
 import { AboutMeSection } from './Components/AboutMeSection';
 import { ProjectsSection } from './Components/ProjectsSection';
