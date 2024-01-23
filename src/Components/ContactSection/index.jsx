@@ -10,12 +10,12 @@ const ContactForm = () => {
     }
 
     return (
-        <section id='contact' className='flex  flex-col  h-[600px] justify-center items-center  w-full my-8 mb-12 '>
+        <section id='contact' className='flex  flex-col  h-[600px] justify-center items-center  w-full my-8 mb-12'>
             <span className='flex justify-center items-center py-2 mb-2'>
                 <MdOutlineMail className='flex justify-center mt-2 mx-2 size-8 '/>
-                <h2 className='flex justify-center items-center text-4xl font-bold '>Contact Me!</h2>
+                <h2 className='flex justify-center items-center text-2xl md:text-4xl font-bold '>Contact Me!</h2>
             </span>
-            <form onSubmit={handleSubmit} className=' w-1/4 mx-auto '>
+            <form onSubmit={handleSubmit} className='w-full max-w-sm mx-auto'>
                 <div className="flex flex-col m-4">
                     <div className="relative z-0 mb-5 group">
                         <input type="text" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 focus:border-indigo-400/60  appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-400/60  focus:outline-none focus:ring-0 peer" placeholder=" " required />

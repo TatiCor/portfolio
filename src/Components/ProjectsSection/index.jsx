@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoCodeSlashOutline } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
 import MokeponImage from '../../assets/projects/mokepon.png';
 import GoogleClon from '../../assets/projects/GoogleClon.png'
 import Ecommerce from '../../assets/projects/yardSale.png'
@@ -74,36 +75,37 @@ const ProjectsSection = () => {
     ];
     
     return (
-        <section id="projects" className="flex flex-col justify-center items-center p-6 m-6 min-w[740px] ">
+        <section id="projects" className="flex flex-col justify-center items-center p-6 m-6 min-w[740px]">
             <span className='flex justify-center items-center p-2 h-full'>
                 <IoCodeSlashOutline className='mt-2 mx-2 size-7' />
-                <h2 className='text-4xl font-bold'>Projects</h2>
+                <h2 className='text-2xl md:text-4xl font-bold'>Projects</h2>
             </span>
 
-            <div className='grid grid-cols-3 gap-16 p-6 m-6'>
-                {
-                    projects.map((project) => (
-                        <div key={project.id} className='w-80 rounded-lg overflow-hidden shadow-2xl shadow-white/10 transition duration-700 transform hover:scale-110 '>
-                            <a href={project.url} target="_blank" rel="noopener noreferrer"> 
-                                <img src={project.imageUrl} alt={project.title} className='w-80 h-60 ' />
-                            </a>
-                            <div className="flex- flex-col justify-center items-center p-4 bg-black/5">                                
-                                <h3 className="text-lg font-semibold text-indigo-200 leading-relaxed">{project.title}</h3>
-                                <p className="text-sm mb-2 opacity-80 leading-relaxed">{project.date}</p>
-                                <p className="text-sm mb-2 opacity-80 leading-relaxed">{project.github}</p>
-                                <ul className='flex mb-2 leading-relaxed'>
-                                    {project.tags && Array.isArray(project.tags) && project.tags.map((tagItem, index) => <li key={index} className='mr-1 text-sm leading-relaxed'>{tagItem} | </li>)}
-                                </ul>
-
-                                <p className="text-md opacity-80 leading-relaxed">{project.description}</p>
-                            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 p-6 m-6 lg:w-auto md:w-full  w-full '>
+                {projects.map((project) => (
+                    <div key={project.id} className=' w-full md:w-80 rounded-lg overflow-hidden shadow-2xl shadow-white/10 transition duration-700 transform hover:scale-110 mb-12 '>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer"> 
+                            <img src={project.imageUrl} alt={project.title} className='w-full h-48 object-cover' />
+                        </a>
+                        <div className="flex- flex-col justify-center items-center p-4 bg-black/5">                                
+                            <h3 className="text-lg font-semibold text-indigo-200 leading-relaxed">{project.title}</h3>
+                            <p className="text-sm mb-2 opacity-80 leading-relaxed">{project.date}</p>
+                            <button className="flex justify-center items-center text-sm mb-2 px-2 py-1 opacity-80 rounded-lg bg-indigo-400 ">
+                                <a className='flex' href={project.github}>
+                                    <IoLogoGithub className="size-5 mr-1 font-semibold " />
+                                    <p className='font-bold'>See repository</p>
+                                </a>
+                            </button>
+                            <ul className='flex mb-2 leading-relaxed'>
+                                {project.tags && Array.isArray(project.tags) && project.tags.map((tagItem, index) => <li key={index} className='mr-1 text-sm leading-relaxed'>{tagItem} | </li>)}
+                            </ul>
+                            <p className="text-md opacity-80 leading-relaxed">{project.description}</p>
                         </div>
-                    ))
-                }
+                    </div>
+                ))}
             </div>
         </section>
     );
 }
 
-
-export {ProjectsSection}
+export { ProjectsSection };
