@@ -3,10 +3,10 @@ import { IoCodeSlashOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
 import MokeponImage from '../../assets/projects/mokepon.png';
 import GoogleClon from '../../assets/projects/GoogleClon.png'
-import Ecommerce from '../../assets/projects/yardSale.png'
 import Calculator from '../../assets/projects/previsionalCalc.png'
 import ToDoList from '../../assets/projects/todo-list.png'
 import EcommerceShopi from '../../assets/projects/ecommerce-shopi.png'
+import Fakeflix from '../../assets/projects/fakeflix.png'
 
 
 const ProjectsSection = () => {
@@ -33,14 +33,15 @@ const ProjectsSection = () => {
         },
         {
             id: 3,
-            title: 'Yard Sale',
-            date: 'June 2023',
-            tags: ['HTML5', 'CSS', 'JavaScript', 'Git', 'Github'],
-            github: 'https://github.com/TatiCor/cursoPractico-frontendDeveloper',
-            description: 'Yard Sale emerged as a responsive e-commerce layout with interactive menu features, employing HTML5, CSS, JavaScript, Git, and GitHub. View the project on GitHub or try the live version here.',
-            imageUrl: Ecommerce,
-            url: 'https://taticor.github.io/cursoPractico-frontendDeveloper/',
+            title: 'Fakeflix',
+            date: 'July 2024',
+            tags: ['HTML5', 'CSS', 'JavaScript', 'Axios'],
+            github: 'https://github.com/TatiCor/fakeflix',
+            description: 'Fakeflix is a mobile-first movie streaming platform that utilizes The Movie Database API to offer a vast library of films. Users can browse by genre, add favorites, and discover new releases through an intuitive interface and minimalist design.',
+            imageUrl: Fakeflix,
+            url: 'https://taticor.github.io/fakeflix/',
         },
+        
         {
             id: 4,
             title: 'Calculadora Previsional (Calculator for lawyers)',
