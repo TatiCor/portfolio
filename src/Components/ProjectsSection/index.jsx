@@ -12,26 +12,6 @@ import Fakeflix from '../../assets/projects/fakeflix.png'
 const ProjectsSection = () => {
     const projects = [
         {
-            id: 1,
-            title: 'MOKEPON! - Online game',
-            date: 'April 2023',
-            tags: ['HTML5', 'CSS', 'JavaScript', 'Node.js', 'Express.js'],
-            github: 'https://github.com/TatiCor/juegoOnline',
-            description: 'MOKEPON! is an online game crafted with HTML5, CSS, JavaScript, Node.js, and Express.js. Providing an interactive gaming experience, this project showcases skills in frontend and backend technologies.',
-            imageUrl: MokeponImage,
-            url: 'https://github.com/TatiCor/juegoOnline',
-        },
-        {
-            id: 2,
-            title: 'Google Clon',
-            date: 'January 2023',
-            tags: ['HTML5', 'CSS'],
-            github: 'https://github.com/TatiCor/googleClon',
-            description: 'Google Clon recreates the layout of the Google website using HTML and CSS. With a focus on frontend design, the project provides a familiar user experience. Check out the project on GitHub or try the live version here.',
-            imageUrl: GoogleClon,
-            url: 'https://taticor.github.io/googleClon/',
-        },
-        {
             id: 3,
             title: 'Fakeflix',
             date: 'July 2024',
@@ -40,17 +20,6 @@ const ProjectsSection = () => {
             description: 'Fakeflix is a mobile-first movie streaming platform that utilizes The Movie Database API to offer a vast library of films. Users can browse by genre, add favorites, and discover new releases through an intuitive interface and minimalist design.',
             imageUrl: Fakeflix,
             url: 'https://taticor.github.io/fakeflix/',
-        },
-        
-        {
-            id: 4,
-            title: 'Calculadora Previsional (Calculator for lawyers)',
-            date: 'April 2020',
-            tags: ['HTML5', 'CSS', 'JavaScript', 'Git', 'Github'],
-            github: 'https://github.com/TatiCor/tatian.github.io',
-            description: 'The "Calculator for Lawyers" project is a practical tool that simplifies debt calculations for legal professionals. The project has a responsive design that ensures seamless access across various devices, making it convenient for users. It also introduces a user-friendly dark mode and light mode, giving users the flexibility to choose their preferred interface.',
-            imageUrl: Calculator,
-            url: 'https://taticor.github.io/tatian.github.io/',
         },
         {
             id: 5,
@@ -71,8 +40,37 @@ const ProjectsSection = () => {
             description: 'Dynamic ReactJS and TailwindCSS-powered E-commerce platform developed from a Platzi technical test. Utilizing the Vite framework for superior performance, it seamlessly offers users an engaging experience in product exploration, category filtering, and order history review. Includes innovative user persistence with localStorage, simulating a backend and enhancing overall interaction.',
             imageUrl: EcommerceShopi,
             url: 'https://taticor.github.io/Ecommerce-Shopi/',
+        },   
+        {
+            id: 1,
+            title: 'MOKEPON! - Online game',
+            date: 'April 2023',
+            tags: ['HTML5', 'CSS', 'JavaScript', 'Node.js', 'Express.js'],
+            github: 'https://github.com/TatiCor/juegoOnline',
+            description: 'MOKEPON! is an online game crafted with HTML5, CSS, JavaScript, Node.js, and Express.js. Providing an interactive gaming experience, this project showcases skills in frontend and backend technologies.',
+            imageUrl: MokeponImage,
+            url: 'https://github.com/TatiCor/juegoOnline',
         },
-        
+        {
+            id: 2,
+            title: 'Google Clon',
+            date: 'January 2023',
+            tags: ['HTML5', 'CSS'],
+            github: 'https://github.com/TatiCor/googleClon',
+            description: 'Google Clon recreates the layout of the Google website using HTML and CSS. With a focus on frontend design, the project provides a familiar user experience. Check out the project on GitHub or try the live version here.',
+            imageUrl: GoogleClon,
+            url: 'https://taticor.github.io/googleClon/',
+        },     
+        {
+            id: 4,
+            title: 'Calculadora Previsional (Calculator for lawyers)',
+            date: 'April 2022',
+            tags: ['HTML5', 'CSS', 'JavaScript', 'Git', 'Github'],
+            github: 'https://github.com/TatiCor/tatian.github.io',
+            description: 'The "Calculator for Lawyers" project is a practical tool that simplifies debt calculations for legal professionals. The project has a responsive design that ensures seamless access across various devices, making it convenient for users. It also introduces a user-friendly dark mode and light mode, giving users the flexibility to choose their preferred interface.',
+            imageUrl: Calculator,
+            url: 'https://taticor.github.io/tatian.github.io/',
+        },
     ];
     
     return (
